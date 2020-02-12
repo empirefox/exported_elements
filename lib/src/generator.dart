@@ -10,7 +10,9 @@ class ExportedElementsGenerator extends Generator {
 
   @override
   String generate(LibraryReader library, BuildStep buildStep) {
-    final names = library.element.exportNamespace.definedNames.keys.toList();
+    final names = library.element.exportNamespace.definedNames.keys
+        .where((e) => !e.endsWith('='))
+        .toList();
     names.sort();
     return JsonEncoder.withIndent('\t').convert(names);
   }

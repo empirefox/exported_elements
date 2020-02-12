@@ -1,4 +1,5 @@
 # remove all flutter deps, then use:
+#   cd packages/flutter
 #   pub get
 #   pub run build_runner build
 dev_dependencies:
