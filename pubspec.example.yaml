@@ -1,0 +1,7 @@
+# remove all flutter deps, then use:
+#   pub get
+#   pub run build_runner build
+dev_dependencies:
+  build_runner: ^1.0.0
+  exported_elements:
+    path: /home/u1804/soft/workspaces/dart/exported_elements

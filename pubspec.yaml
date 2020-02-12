@@ -1,0 +1,10 @@
+name: exported_elements
+version: 0.0.1
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+
+dependencies:
+  analyzer: ">=0.37.0 <0.40.0"
+  build: ^1.0.0
+  source_gen:
